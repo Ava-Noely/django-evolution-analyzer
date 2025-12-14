@@ -1,0 +1,21 @@
+hash,author_name,author_email,committed_date,message,insertions,deletions,files_changed,year_month,hour_of_day,total_changes,net_changes
+7b54ddd5e64c96c641b70bb5f0e958a9e2035fb2,Clifford Gama,cliffygamy@gmail.com,2025-11-14T09:18:59+02:00,Refs #36025 -- Made get_prep_lookup() pass output_field when wrapping direct values in Value.,36,21,2,2025-11,9,57,15
+9b8e4c6d7d47f7b2e96817ba334e9fd53c10a0df,Clifford Gama,cliffygamy@gmail.com,2025-11-14T09:18:09+02:00,Refs #36689 -- Serialized JSONIn rhs parameters wrapped in Value expressions.,4,4,2,2025-11,9,8,0
+66fed37ecb78daf0a50e95151a752b5760293514,Clifford Gama,cliffygamy@gmail.com,2025-10-30T20:59:15+02:00,Fixed #36689 -- Fixed top-level JSONField __in lookup failures on MySQL and Oracle.,135,60,2,2025-10,20,195,75
+bbabbac936caf6db129427e6e65f03b6d0a68f62,Tim Graham,timograham@gmail.com,2025-07-25T15:41:50-04:00,"Added tests for MultiPointField, MultiLineStringField, and GeometryCollectionField.",68,9,4,2025-07,15,77,59
+3ccef1d669de942b9f3280a35ad4d4422b0b46d2,varunkasyap,varunkasyap@hotmail.com,2025-12-04T14:06:44+05:30,Fixed #36768 -- Optimized string concatenation in File.__iter__().,18,15,1,2025-12,14,33,3
+334308efae8e0c7b1523d5583af32b674a098eba,Jacob Walls,jacobtylerwalls@gmail.com,2025-12-05T15:32:56-05:00,Fixed #36778 -- Extended advice to sanitize input before using in query expressions.,17,4,3,2025-12,15,21,13
+af60ae48d98888826928b1c2def47a980f9a4af4,Adam Johnson,me@adamj.eu,2025-12-03T22:50:06+00:00,Refs #35581 -- Fixed email image inline attachment example.,12,3,1,2025-12,22,15,9
+e726254a380f2a35a2fcf71143e96cb5987d8102,saurabh,saurabhrai1717@gmail.com,2025-08-26T00:18:42+05:30,Refs #36620 -- Added contributor documentation for code coverage reports.,46,0,2,2025-08,0,46,46
+fd4c5fa3edb1fa3f968085a7cb8b3e19f5646105,saurabh,saurabhrai1717@gmail.com,2025-12-06T20:20:06+05:30,Refs #36620 -- Fixed PR number extraction in coverage_comment workflow.,19,6,2,2025-12,20,25,13
+020e5799ad74cfafd469f032cd05767c9d670a16,Clifford Gama,cliffygamy@gmail.com,2025-12-05T17:28:38+02:00,"Refs #27834 -- Restored ""expression"" in StrIndex's docs signature.",2,2,1,2025-12,17,4,0
+1dfd5aa2b5beb2d5354527eae4f2589b828ac06c,saurabh,saurabhrai1717@gmail.com,2025-12-05T20:41:00+05:30,Refs #36620 -- Removed PR number null check from coverage_comment workflow.,1,2,1,2025-12,20,3,-1
+0ac548635eee801d5de49bec482b7b8e1e97ef59,Jake Howard,git@theorangeone.net,2025-11-12T17:41:32+00:00,Fixed #36728 -- Validated template tag arguments at definition time.,94,159,8,2025-11,17,253,-65
+55888655a269f41025405b9a1bff14117ae58e2a,Clifford Gama,cliffygamy@gmail.com,2025-11-10T13:28:07+02:00,Fixed #36722 -- Moved AutoFieldMixin validate_autopk_value() check to get_db_prep_save.,18,6,2,2025-11,13,24,12
+16252e690720edace3e0e220b99d9141fe091fb4,Chaitanya,bkc14042005@gmail.com,2025-07-31T10:37:40+05:30,Fixed #36367 -- Added a label to the date_hierarchy in admin changelist.,19,3,4,2025-07,10,22,16
+17d644c8e257c2ea5cc738fb7a9c47989e29bf09,Tim Graham,timograham@gmail.com,2025-12-03T18:06:53-05:00,Added DatabaseFeatures.prohibits_dollar_signs_in_column_aliases.,19,12,5,2025-12,18,31,7
+26b0e2bb92caf2d16cabe455792350f20d6f42ca,saurabh,saurabhrai1717@gmail.com,2025-12-04T20:55:21+05:30,Fixed #36620 -- Fixed workflow to summarize coverage in PRs.,149,0,4,2025-12,20,149,149
+0ca3a0661173b02e2cbb0183d8543e790e7e4a55,Dmitry Chestnykh,dmitry@codingrobots.com,2025-11-19T01:24:38+01:00,Fixed #36744 -- Improved scrypt password hasher docs.,10,4,1,2025-11,1,14,6
+bd4a562a8849147d4aa4bd42f7fdb1b51f89bb84,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-26T10:00:38-05:00,Closed pool when parallel test runner encounters unpicklable exceptions.,31,33,2,2025-11,10,64,-2
+93540b34d4ef46f68df2c8bfe90447d0f649a852,rimi0108,hyerimc858@gmail.com,2025-10-04T13:52:59+09:00,Fixed #35729 -- Enabled natural key serialization opt-out for subclasses.,119,29,7,2025-10,13,148,90
+ddb7236b0ae9be3163c90f799fb79396e9f61cc8,Jake Howard,git@theorangeone.net,2025-12-03T16:57:47+00:00,Refs #36520 -- Removed release note for refactored `parse_header_parameters`.,0,4,1,2025-12,16,4,-4

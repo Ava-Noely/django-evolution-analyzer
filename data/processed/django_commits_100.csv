@@ -1,0 +1,101 @@
+hash,author_name,author_email,committed_date,message,insertions,deletions,files_changed,year_month,hour_of_day,total_changes,net_changes
+7b54ddd5e64c96c641b70bb5f0e958a9e2035fb2,Clifford Gama,cliffygamy@gmail.com,2025-11-14T09:18:59+02:00,Refs #36025 -- Made get_prep_lookup() pass output_field when wrapping direct values in Value.,36,21,2,2025-11,9,57,15
+9b8e4c6d7d47f7b2e96817ba334e9fd53c10a0df,Clifford Gama,cliffygamy@gmail.com,2025-11-14T09:18:09+02:00,Refs #36689 -- Serialized JSONIn rhs parameters wrapped in Value expressions.,4,4,2,2025-11,9,8,0
+66fed37ecb78daf0a50e95151a752b5760293514,Clifford Gama,cliffygamy@gmail.com,2025-10-30T20:59:15+02:00,Fixed #36689 -- Fixed top-level JSONField __in lookup failures on MySQL and Oracle.,135,60,2,2025-10,20,195,75
+bbabbac936caf6db129427e6e65f03b6d0a68f62,Tim Graham,timograham@gmail.com,2025-07-25T15:41:50-04:00,"Added tests for MultiPointField, MultiLineStringField, and GeometryCollectionField.",68,9,4,2025-07,15,77,59
+3ccef1d669de942b9f3280a35ad4d4422b0b46d2,varunkasyap,varunkasyap@hotmail.com,2025-12-04T14:06:44+05:30,Fixed #36768 -- Optimized string concatenation in File.__iter__().,18,15,1,2025-12,14,33,3
+334308efae8e0c7b1523d5583af32b674a098eba,Jacob Walls,jacobtylerwalls@gmail.com,2025-12-05T15:32:56-05:00,Fixed #36778 -- Extended advice to sanitize input before using in query expressions.,17,4,3,2025-12,15,21,13
+af60ae48d98888826928b1c2def47a980f9a4af4,Adam Johnson,me@adamj.eu,2025-12-03T22:50:06+00:00,Refs #35581 -- Fixed email image inline attachment example.,12,3,1,2025-12,22,15,9
+e726254a380f2a35a2fcf71143e96cb5987d8102,saurabh,saurabhrai1717@gmail.com,2025-08-26T00:18:42+05:30,Refs #36620 -- Added contributor documentation for code coverage reports.,46,0,2,2025-08,0,46,46
+fd4c5fa3edb1fa3f968085a7cb8b3e19f5646105,saurabh,saurabhrai1717@gmail.com,2025-12-06T20:20:06+05:30,Refs #36620 -- Fixed PR number extraction in coverage_comment workflow.,19,6,2,2025-12,20,25,13
+020e5799ad74cfafd469f032cd05767c9d670a16,Clifford Gama,cliffygamy@gmail.com,2025-12-05T17:28:38+02:00,"Refs #27834 -- Restored ""expression"" in StrIndex's docs signature.",2,2,1,2025-12,17,4,0
+1dfd5aa2b5beb2d5354527eae4f2589b828ac06c,saurabh,saurabhrai1717@gmail.com,2025-12-05T20:41:00+05:30,Refs #36620 -- Removed PR number null check from coverage_comment workflow.,1,2,1,2025-12,20,3,-1
+0ac548635eee801d5de49bec482b7b8e1e97ef59,Jake Howard,git@theorangeone.net,2025-11-12T17:41:32+00:00,Fixed #36728 -- Validated template tag arguments at definition time.,94,159,8,2025-11,17,253,-65
+55888655a269f41025405b9a1bff14117ae58e2a,Clifford Gama,cliffygamy@gmail.com,2025-11-10T13:28:07+02:00,Fixed #36722 -- Moved AutoFieldMixin validate_autopk_value() check to get_db_prep_save.,18,6,2,2025-11,13,24,12
+16252e690720edace3e0e220b99d9141fe091fb4,Chaitanya,bkc14042005@gmail.com,2025-07-31T10:37:40+05:30,Fixed #36367 -- Added a label to the date_hierarchy in admin changelist.,19,3,4,2025-07,10,22,16
+17d644c8e257c2ea5cc738fb7a9c47989e29bf09,Tim Graham,timograham@gmail.com,2025-12-03T18:06:53-05:00,Added DatabaseFeatures.prohibits_dollar_signs_in_column_aliases.,19,12,5,2025-12,18,31,7
+26b0e2bb92caf2d16cabe455792350f20d6f42ca,saurabh,saurabhrai1717@gmail.com,2025-12-04T20:55:21+05:30,Fixed #36620 -- Fixed workflow to summarize coverage in PRs.,149,0,4,2025-12,20,149,149
+0ca3a0661173b02e2cbb0183d8543e790e7e4a55,Dmitry Chestnykh,dmitry@codingrobots.com,2025-11-19T01:24:38+01:00,Fixed #36744 -- Improved scrypt password hasher docs.,10,4,1,2025-11,1,14,6
+bd4a562a8849147d4aa4bd42f7fdb1b51f89bb84,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-26T10:00:38-05:00,Closed pool when parallel test runner encounters unpicklable exceptions.,31,33,2,2025-11,10,64,-2
+93540b34d4ef46f68df2c8bfe90447d0f649a852,rimi0108,hyerimc858@gmail.com,2025-10-04T13:52:59+09:00,Fixed #35729 -- Enabled natural key serialization opt-out for subclasses.,119,29,7,2025-10,13,148,90
+ddb7236b0ae9be3163c90f799fb79396e9f61cc8,Jake Howard,git@theorangeone.net,2025-12-03T16:57:47+00:00,Refs #36520 -- Removed release note for refactored `parse_header_parameters`.,0,4,1,2025-12,16,4,-4
+c02e65e34ba59968888c5d684e92a3fd5ce93300,Natalia,124304+nessita@users.noreply.github.com,2025-12-03T13:29:09-03:00,Added stub release notes for 6.0.1.,13,0,2,2025-12,13,13,13
+d3f142f2cd36ba0458cc679397555bd5ee7db744,Jacob Walls,jacobtylerwalls@gmail.com,2025-12-02T10:25:26-05:00,Refs #35859 -- Clarified Tasks ref and topics docs regarding available backends.,34,11,3,2025-12,10,45,23
+ea4920174e3231ff5b72b3ffb2b20432671047d9,Natalia,124304+nessita@users.noreply.github.com,2025-12-03T12:38:14-03:00,Finalized release notes for Django 6.0.,4,4,1,2025-12,12,8,0
+fe42aa6100a2df4702e2399cffb375dbc986b036,Adam Johnson,me@adamj.eu,2025-12-03T11:21:53+00:00,Made cosmetic edits to docs/releases/6.0.txt.,22,26,1,2025-12,11,48,-4
+d338c2243fa0786225e056c5d7003f7ad67d44de,Skyiesac,jainsachi1202@gmail.com,2025-11-17T00:46:37+05:30,Fixed #36280 -- Replaced exception checks with assertRaisesMessage().,100,152,4,2025-11,0,252,-52
+dba622ebc1f6a6700b75303a65f8a334bd46bd8e,Natalia,124304+nessita@users.noreply.github.com,2025-12-01T15:13:24-03:00,Updated translations from Transifex.,3024,1982,112,2025-12,15,5006,1042
+d0d596042e958809a13b681d7a184ac7b95e0aa3,Natalia,124304+nessita@users.noreply.github.com,2025-12-02T11:30:11-03:00,Added CVE-2025-13372 and CVE-2025-64460 to security archive.,24,0,1,2025-12,11,24,24
+8d4ec9949aedc11a258d718689550eea61ae8d4c,Natalia,124304+nessita@users.noreply.github.com,2025-12-02T11:11:52-03:00,Added stub release notes for 5.2.10.,13,0,2,2025-12,11,13,13
+50efb718b31333051bc2dcb06911b8fa1358c98c,Shai Berger,shai@platonix.com,2025-10-11T21:42:56+03:00,Fixed CVE-2025-64460 -- Corrected quadratic inner text accumulation in XML serializer.,119,6,6,2025-10,21,125,113
+5b90ca1e7591fa36fccf2d6dad67cf1477e6293e,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-17T17:09:54-05:00,Fixed CVE-2025-13372 -- Protected FilteredRelation against SQL injection in column aliases on PostgreSQL.,45,1,5,2025-11,17,46,44
+cb1d2854ed2b13799f2b0cc6e04019df181bacd4,螡喂魏蠈位伪慰蟼-螖喂纬蔚谓萎蟼 螝伪蟻伪纬喂维谓谓畏蟼,digenishjkl@gmail.com,2025-12-02T12:49:20+02:00,Refs #35444 -- Fixed typo in PostgreSQL StringAgg deprecation warning.,2,2,2,2025-12,12,4,0
+34186e731ca20a2344b1f88fd543a854d6b13a00,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-29T18:45:39-05:00,Fixed #36712 -- Evaluated type annotations lazily in template tag registration.,138,32,8,2025-11,18,170,106
+ce36c35e76f82f76cdfa5777456e794d481e5afc,Jacob Walls,jacobtylerwalls@gmail.com,2025-12-01T08:54:37-05:00,Refs #36743 -- Corrected docstring for DisallowedRedirect.,1,1,1,2025-12,8,2,0
+e94b19f6abdda70689aa17e399ce5fdef7897674,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-29T19:17:50-05:00,Refs #35535 -- Used intended decorator in test_simple_block_tag_parens().,1,1,1,2025-11,19,2,0
+3ea0195ca57790d7bd6921ecaa32312eabec78d0,Rida Zouga,96395950+ZougaRida@users.noreply.github.com,2025-11-30T08:29:43+01:00,Added link to Python Pickle documentation in docs/topics/cache.txt.,2,2,1,2025-11,8,4,0
+7b32485ee98edf7e8b94ad9c8acdccee562bf216,Bruno Alla,browniebroke@users.noreply.github.com,2025-11-27T16:12:19+00:00,Fixed outdated redis-py link in cache docs.,1,1,1,2025-11,16,2,0
+bd7940982d6cab386dae7698ab097b91e5d8145e,Tim Schilling,schillingt@better-simple.com,2025-11-13T14:31:50-06:00,Highlighted community package upgrade utilities in docs/howto/upgrade-version.txt.,7,0,1,2025-11,14,7,7
+333f88c7e9920063ec4584dec31f84436d28ae62,Natalia,124304+nessita@users.noreply.github.com,2025-11-27T09:11:20-03:00,Reduced subjective tone and improved clarity in docs/howto/upgrade-version.txt.,5,6,1,2025-11,9,11,-1
+60b08ad5e1701b1a9b2a03e5897670d5af32d379,Natalia,124304+nessita@users.noreply.github.com,2025-11-26T13:23:42-03:00,Included usage of new scripts in docs/internals/howto-release-django.txt.,27,5,1,2025-11,13,32,22
+532c1058a7dd2616181259c94eb92f2477038d2c,Natalia,124304+nessita@users.noreply.github.com,2025-11-26T13:22:52-03:00,Added script to archive EOL stable branches.,152,1,2,2025-11,13,153,151
+18b13cf6c48ff0a20b2a74d3b90d1fc1602608e4,Natalia,124304+nessita@users.noreply.github.com,2025-11-26T17:22:53-03:00,Refs #36743 -- Added missing release notes for 5.1.15 and 4.2.27.,8,2,2,2025-11,17,10,6
+a8cf8c292cfee98fe6cc873ca5221935f1d02271,varunkasyap,varunkasyap@hotmail.com,2025-11-26T14:28:24-03:00,Fixed #36743 -- Increased URL max length enforced in HttpResponseRedirectBase.,28,5,4,2025-11,14,33,23
+818a620f0847d6d9f4f641114627a9537e5fea0e,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-20T17:51:33-05:00,Refs #36619 -- Included third-party licenses with vendored eslint configuration files.,34,0,2,2025-11,17,34,34
+55af4749b9a48b2978e893e7d7be313c0b2abdb1,Cha Hwa Young,chahwayoung214@gmail.com,2025-10-13T02:29:15+09:00,Fixed #31506 -- Clarified that ExpressionWrapper does not perform database casts.,45,0,2,2025-10,2,45,45
+e48527f91d341c85a652499a5baaf725d36ae54f,Natalia,124304+nessita@users.noreply.github.com,2025-11-25T22:18:50-03:00,Added timeout-minutes directive to all GitHub Actions workflows.,26,0,13,2025-11,22,26,26
+a08f1693f37e9aae9eca395020cce0638cb5aa5f,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-26T07:17:39-05:00,Closed temporary files in OverwritingStorageTests.test_save_overwrite_behavior_temp_file().,2,0,1,2025-11,7,2,2
+e4c4a178aa642f8493b7ae2c0ad58527af51f67e,Natalia,124304+nessita@users.noreply.github.com,2025-11-25T16:04:06-03:00,"Reverted ""Fixed #36620 -- Added coverage workflow to summarize coverage in pull requests.""",0,151,4,2025-11,16,151,-151
+d62e811acfc6a056e847bfcc460092a98511ed00,Natalia,124304+nessita@users.noreply.github.com,2025-11-18T13:13:31-03:00,"Added stub release notes and release date for 5.2.9, 5.1.15, and 4.2.27.",31,2,4,2025-11,13,33,29
+70e93bc17bc00c4d1ade9ba600ffe180a6973d66,Mariusz Felisiak,felisiak.mariusz@gmail.com,2025-11-25T11:21:13+01:00,Fixed #36756 -- Dropped support for GDAL 3.1 and 3.2.,13,27,4,2025-11,11,40,-14
+d86802f13fd821f006371b95d888d294297874fd,David Smith,smithdc@gmail.com,2024-09-23T18:21:02+01:00,Fixed #35783 -- Added NumDimensions GIS database function and __num_dimensions lookup.,78,1,11,2024-09,18,79,77
+e3d8f557ff3bab2b37a55db83f71ceb90bc4ebc8,Tim Graham,timograham@gmail.com,2025-11-25T03:03:17-05:00,Refs #21961 -- Added required_db_features to delete's RelatedDbOptionParent.,3,0,1,2025-11,3,3,3
+fab1f25d4ee159e256823ad427ec7074b83f0027,Varun Kasyap Pentamaraju,varunkasyap@hotmail.com,2025-11-18T12:58:25+00:00,Fixed #36738 -- Confirmed support for GDAL 3.12.,8,5,2,2025-11,12,13,3
+d08ae991a83950aba5043f5a34f5af12d2effe9e,Jake Howard,git@theorangeone.net,2025-11-24T15:30:23-03:00,Corrected assertions for True/False results in tests/auth_tests/test_handlers.py.,7,7,1,2025-11,15,14,0
+2a6e0bd72d4a69725b957d6748a4b834f21b12b5,Simon Charette,charette.s@gmail.com,2025-11-24T06:14:38-05:00,Fixed #36751 -- Fixed empty filtered aggregation crash over annotated queryset.,34,1,4,2025-11,6,35,33
+57c50d8c1996733cef45204ea069a2c01b2860cc,Tim Graham,timograham@gmail.com,2025-11-20T20:18:09-05:00,Refs #21961 -- Added DatabaseFeatures.supports_on_delete_db_(cascade/null) feature flags.,181,48,12,2025-11,20,229,133
+ec60df6d1ea8939a316d9b180faa0b4ef2e83606,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-21T16:10:07-05:00,Removed outdated build guidance in release docs.,1,2,1,2025-11,16,3,-1
+789b07544798a9c83d0b74dce7c33fcd8d929a7d,David Smith,smithdc@gmail.com,2024-09-19T17:15:22+01:00,Fixed #35774 -- Dropped support for GEOS 3.8.,7,8,4,2024-09,17,15,-1
+e3038897992d1c47f70ffb84ec1109b8d6a68bb9,Skyiesac,jainsachi1202@gmail.com,2025-11-20T22:43:21+05:30,Fixed #36256 -- Removed unnecessary titles from admin UI elements.,3,4,3,2025-11,22,7,-1
+11f9fae0b79651291e89446c367d0d1223abbd20,VIZZARD-X,vigneshanandmay13@gmail.com,2025-11-20T11:30:26+05:30,Fixed #36741 -- Linked to custom save()/delete() caveats in docs/ref/models/querysets.txt.,15,10,2,2025-11,11,25,5
+a89183e63844a937aacd3ddb73c4952ef869d2cc,saurabh,saurabhrai1717@gmail.com,2025-08-26T00:18:42+05:30,Fixed #36620 -- Added coverage workflow to summarize coverage in pull requests.,151,0,4,2025-08,0,151,151
+846613e521104fa2f2e1c2023e4a1a9886a2ff48,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-14T14:06:21-05:00,Configured dangerous-triggers zizmor rule.,10,0,3,2025-11,14,10,10
+86b8058b40145fb5ba4fd859676225f533eca986,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-14T13:58:40-05:00,Addressed unpinned-uses zizmor finding.,11,1,3,2025-11,13,12,10
+08f4901b3fd3f352ef9cea830d000aee73152556,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-19T14:35:36-05:00,Simplified actions after applying zizmor auto-fixes.,3,6,1,2025-11,14,9,-3
+e8958c4690faef27b6715524ecb5c49c3ecb6a09,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-14T13:39:01-05:00,Applied auto-fixes from zizmor findings.,55,3,11,2025-11,13,58,52
+09d4bf5cd9c95c588d3ec22edea5db1f5f146900,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-14T13:30:30-05:00,Added GitHub Actions linter (zizmor).,32,7,5,2025-11,13,39,25
+a523d5c8336f5f7f5e24a1cc8034ce65aedec3c6,Natalia,124304+nessita@users.noreply.github.com,2025-11-20T12:31:59-03:00,Added scripts for building and releasing Django artifacts.,366,0,4,2025-11,12,366,366
+971c76f735d2d61051d887b62a244d743794699a,Natalia,124304+nessita@users.noreply.github.com,2025-11-20T13:57:07-03:00,Skipped scripts/ folder from built release artifacts.,1,1,1,2025-11,13,2,0
+3f15935420c0f45760804b807a78a26f4ffe28e4,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-21T10:28:59-05:00,Refs #36705 -- Added coverage for multiple types of enclosing punctuation in urlize().,7,0,1,2025-11,10,7,7
+be0620b49fce5ddd179356575603c4160390965e,Mariusz Felisiak,felisiak.mariusz@gmail.com,2025-11-21T17:55:28+01:00,Refs #36031 -- Added tests of DecimalRangeField __contains lookup with unbounded decimal ranges.,19,0,1,2025-11,17,19,19
+7e4c4f43f51e829e6378a0305bfda81479a368ab,Clifford Gama,cliffygamy@gmail.com,2025-11-21T12:20:12+02:00,Fixed #36718 -- Added JSONField support for negative array indexing on Oracle 21c+.,18,2,4,2025-11,12,20,16
+8ce3e1f9d0cdfdcba91e7e544804fa33f6fa9177,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-20T17:28:24-05:00,Added missing ticket links in docs/releases/5.2.8.txt.,2,2,1,2025-11,17,4,0
+5834643f43a767fe19f2c6d10217b204e7584ec8,Chris Wesseling,chris@maykinmedia.nl,2025-11-20T15:01:14+01:00,Fixed #36748 -- Filtered non-standard placeholders from UNNEST queries.,49,0,6,2025-11,15,49,49
+ff843bcbce1f7fc16fcc4d4810c221a2eb11c167,Zubair Hassan,zubair.hassan@alchemative.com,2025-11-20T16:38:47+05:00,Fixed #36734 -- Clarified the behavior of View.http_method_not_allowed.,3,2,1,2025-11,16,5,1
+b1a65eac7c09250d36e12464fc8fff2a401246b6,kihuni,stephenkihuni55@gmail.com,2025-11-02T08:50:45+03:00,Fixed #36321 -- Defaulted suggest_on_error=True in management commands.,34,6,5,2025-11,8,40,28
+ee2e0e202874db31449d3c7c292504652fa87f69,nessita,124304+nessita@users.noreply.github.com,2025-11-20T15:43:21-03:00,Ensured that Sitemap.items is described as a method in docs/ref/contrib/sitemaps.txt.,14,14,1,2025-11,15,28,0
+d9c94c59835ca2b6569583392bbf5c7f65a8e927,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-20T10:12:05-05:00,Fixed typo in docs/howto/deployment/wsgi/apache-auth.txt.,1,1,1,2025-11,10,2,0
+14fb36e0b083ea963220602d01386cc0fb2c40e4,Storm B. Heg,storm@stormbase.digital,2025-11-20T14:28:11+01:00,"Refs #36663, #36739 -- Added release note for running checks against all databases.",10,4,2,2025-11,14,14,6
+07419875685997a30cd281396e0dc867e98aefe3,farthestmage,arnavkamboj511@gmail.com,2025-11-17T15:56:50+05:30,Fixed #36737 -- Escaped further control characters in escapejs.,9,2,2,2025-11,15,11,7
+97acd4d2f92eef8c285bac070d437bf0fd52e071,Mariusz Felisiak,felisiak.mariusz@gmail.com,2025-11-19T08:22:44+01:00,Fixed #26609 -- Extended fields.E004 system check for unordered iterables.,44,8,3,2025-11,8,52,36
+e05f2a75695b5f5faa7682d4053db4776d4d6f93,varunkasyap,varunkasyap@hotmail.com,2025-11-15T10:36:46+05:30,Fixed #36733 -- Escaped attributes in Stylesheet.__str__().,40,22,4,2025-11,10,62,18
+b07298a73a8d444b3618aad8005055bee5ead8cb,Georgi Yanchev,georgi-yanchev@users.noreply.github.com,2025-11-18T08:10:25-05:00,Fixed #36141 -- Checked for applied replaced migrations recursively.,71,7,3,2025-11,8,78,64
+3c005b5f79bf6d71f3f4c3692ed670e1722b0fb6,Annabelle Wiegart,annabelle.wiegart@proton.me,2025-11-12T16:08:06+01:00,Fixed #26379 -- Doc'd that the first filter() on a many-to-many relation is sticky.,67,0,1,2025-11,16,67,67
+1ce6e78dd4beed702f15fa0be798dd17a15d4ba8,Mariusz Felisiak,felisiak.mariusz@gmail.com,2025-11-17T13:43:47+01:00,Fixed #24920 -- Added support for DecimalField with no precision.,205,78,16,2025-11,13,283,127
+5c60763561c67924eff1069e1516b60a59d068d5,Kasyap Pentamaraju,vpentamaraju@webmd.net,2025-11-11T11:10:29+05:30,Fixed #36723 -- Removed logic for repositioning FilteredSelectMultiple help text.,0,12,1,2025-11,11,12,-12
+35f86b641a4eb26fa2b7c3842b6d374834a4ea6b,Mariusz Felisiak,felisiak.mariusz@gmail.com,2025-11-14T13:36:15+01:00,Refs #24928 -- Added introspection support for PostgreSQL HStoreField.,37,2,6,2025-11,13,39,35
+0eec2a163a4b2ea4e82c53ae1d7b71bf43ac911d,Kasyap Pentamaraju,vpentamaraju@webmd.net,2025-11-11T14:59:28+05:30,"Fixed #36724 -- Removed invalid ""for"" attribute on <legend> tags.",52,34,7,2025-11,14,86,18
+7e765a68598b2b798e49bf1f4b431a7bcac085a4,Kasyap Pentamaraju,vpentamaraju@webmd.net,2025-10-25T19:23:40+05:30,Fixed #36686 -- Clarified Meta.ordering is ignored in GROUP BY queries.,15,2,2,2025-10,19,17,13
+3aba1fced8254435b947467739721ec6b4fb865c,Simon Charette,charette.s@gmail.com,2025-09-29T17:47:56-04:00,Fixed #36663 -- Defaulted to running checks against all databases.,39,7,2,2025-09,17,46,32
+96ee097bd68a93e0f360326271ebe78553fae15b,Simon Charette,charette.s@gmail.com,2025-11-08T16:40:26-05:00,Refs #31055 -- Adjusted passing of Field.check kwargs to ArrayField.base_field.,20,1,2,2025-11,16,21,19
+1b539ef27e776bd6112e8f22e653feca5279c4fb,Simon Charette,charette.s@gmail.com,2025-11-08T15:26:36-05:00,Refs #31055 -- Augmented regression tests for database system checks.,34,3,2,2025-11,15,37,31
+abfa4619fb818ff694c22e962a280673e085239e,Adam Johnson,me@adamj.eu,2025-11-12T19:47:16+00:00,Fixed #36730 -- Fixed constraint validation crash for excluded FK attnames.,39,2,3,2025-11,19,41,37
+5401b125abca53200eacb62c8a10e602359b76d4,Benedict Etzel,developer@beheh.de,2025-11-10T13:29:34+01:00,Fixed #36717 -- Redirect authenticated users on admin login view to next URL.,53,19,5,2025-11,13,72,34
+66b5a6de78ac3bcdf586844eac61663fece10ab5,Clifford Gama,cliffygamy@gmail.com,2025-11-09T11:32:25+02:00,Refs #35381 -- Made JSONNull deconstruct using convenient import path.,9,0,2,2025-11,11,9,9
+a1ce852e52f45da7528446cef3a1f02416531771,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-11T20:51:13-05:00,Refs #35844 -- Ran further selenium tests with --parallel=1.,4,4,2,2025-11,20,8,0
+c0d7fbe5021b0d2aaa5bb1196a6b43afcecec4d0,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-11T16:44:04-05:00,Refs #35844 -- Ran selenium tests with --parallel=1.,1,1,1,2025-11,16,2,0
+c60a708b58d6c8725f2e9dc46ac43d38250989b8,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-11T16:36:49-05:00,Refs #35844 -- Checked for forkserver mode when running runtests.py with --selenium and --parallel.,4,1,1,2025-11,16,5,3
+6821a7c9904861bf1381383b95ed85ff49d9ee5d,Dani Fornons,fornons@gmail.com,2025-11-10T10:21:46+01:00,Fixed #36053 -- Fixed placement of FilteredSelectMultiple widget label.,7,5,2,2025-11,10,12,2
+2b0f24e6223bf7e294fba63741f58eb7b0bf49ff,Clifford Gama,cliffygamy@gmail.com,2025-11-10T22:59:38+02:00,Fixed typo in docs/ref/databases.txt.,1,1,1,2025-11,22,2,0
+fffa64abc3870989d62659453cb302857c539956,Kasyap Pentamaraju,vpentamaraju@webmd.net,2025-11-07T10:31:53+05:30,Fixed #36715 -- Handled non-finite Decimals in intcomma filter.,9,0,2,2025-11,10,9,9
+e78420c2b8ef62acb6b7a37b71e3aa6833d630fb,Jacob Walls,jacobtylerwalls@gmail.com,2025-11-04T14:34:17-05:00,Refs #36680 -- Avoided manipulating PATH in AdminScriptTestCase.,28,45,1,2025-11,14,73,-17
