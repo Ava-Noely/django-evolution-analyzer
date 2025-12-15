@@ -1,6 +1,7 @@
 import sys
 import pandas as pd
 
+from src.core.contributor_analyzer import ContributorAnalyzer
 from src.core.time_analyzer import TimeAnalyzer
 
 sys.path.insert(0, 'src')
@@ -22,9 +23,13 @@ if collector.repo_path.exists():
 
     if commits and len(commits) > 0:
         commits_df = pd.DataFrame(commits)
-        time_Analyzer = TimeAnalyzer()
-        summary = time_Analyzer.get_time_analyzer_summary(commits_df)
-        print(summary)
+        contributor_analyzer = ContributorAnalyzer()
+        contributor_basic = contributor_analyzer.caculate_basic_metrics(commits_df)
+        print(contributor_basic)
+        contributor_core = contributor_analyzer.identify_core_contributor(commits_df,0.8)
+        print(contributor_core)
+        contributor_top = contributor_analyzer.get_top_contributors(commits_df,3)
+        print(contributor_top)
 else:
     print("仓库不存在，测试克隆...")
     success = collector.clone_repository()

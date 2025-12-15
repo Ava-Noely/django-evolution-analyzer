@@ -15,7 +15,7 @@ class Config:
     PROCESSED_DATA_DIR = DATA_DIR / "processed"
 
     # Django仓库配置
-    DJANGO_REPO_URL = "git@github.com:django/django.git"
+    DJANGO_REPO_URL = "https://github.com/django/django.git"
     DJANGO_REPO_PATH = RAW_DATA_DIR / "django"
 
     # 分析配置
