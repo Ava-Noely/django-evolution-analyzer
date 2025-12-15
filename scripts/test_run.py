@@ -1,7 +1,7 @@
 import sys
 import pandas as pd
 
-from src.analysis.time_analyzer import TimeAnalyzer
+from src.core.time_analyzer import TimeAnalyzer
 
 sys.path.insert(0, 'src')
 from src.core.data_collector import GitDataCollector
