@@ -142,7 +142,7 @@ class GitDataCollector:
                         )
                         commits.append(commit)
                     except ValueError as e:
-                        print(f"[收集器] ⚠️ 日期解析失败 {date_str}: {e}")
+                        print(f"️❌ 日期解析失败 {date_str}: {e}")
                         # 继续处理下一个提交
                         i += 1
                 else:
@@ -155,7 +155,7 @@ class GitDataCollector:
     def save_to_csv(self, commits: List[Commit], filename: str = "commits.csv") -> str:
         """保存提交数据到CSV"""
         if not commits:
-            print("[收集器] ⚠️ 没有数据可保存")
+            print("❌ 没有数据可保存")
             return ""
 
         # 转换为DataFrame
@@ -166,5 +166,5 @@ class GitDataCollector:
         save_path = Config.PROCESSED_DATA_DIR / filename
         df.to_csv(save_path, index=False, encoding='utf-8')
 
-        print(f"[收集器] ✅ 数据已保存: {save_path}")
+        print(f"✅ 数据已保存: {save_path}")
         return str(save_path)
