@@ -1,9 +1,10 @@
 import sys
 import pandas as pd
+
 from matplotlib import pyplot as plt
 
 from src.core.cleaner import DataCleaner
-from src.core.contributor_analyzer import ContributorAnalyzer
+from src.core.contributor_analyzer import ContributorAnalyzer, ContributorLifeCycleAnalyzer
 from src.core.time_analyzer import TimeAnalyzer
 from src.core.time_visualizer import TimeVisualizer
 
@@ -20,26 +21,33 @@ if collector.repo_path.exists():
     print(f"提交总数: {count}")
 
     # 测试提取少量数据
-    test_count = 100
+    test_count = 8000
     commits = collector.extract_commits(test_count)
     print(f"提取到 {len(commits)} 个提交")
 
     if commits and len(commits) > 0:
         commits_df = pd.DataFrame(commits)
+        print("实际列名:", commits_df.columns.tolist())
         # contributor_analyzer = ContributorAnalyzer()
-        # contributor_basic = contributor_analyzer.caculate_basic_metrics(commits_df)
+        # contributor_basic = contributor_analyzer.calculate_basic_metrics(commits_df)
         # print(contributor_basic)
         # contributor_core = contributor_analyzer.identify_core_contributor(commits_df,0.8)
         # print(contributor_core)
         # contributor_top = contributor_analyzer.get_top_contributors(commits_df,3)
-        # print(contributor_top)
-        visualizer = TimeVisualizer()
-        cleaner = DataCleaner()
-        commits_df = cleaner.clean_commit_date(commits_df)
-        visualizer.create_heatmap(commits_df)
-        plt.show()
-        visualizer.create_combined_visualization(commits_df)
-        plt.show()
+
+        # visualizer = TimeVisualizer()
+        # cleaner = DataCleaner()
+        # commits_df = cleaner.clean_commit_date(commits_df)
+        # visualizer.create_heatmap(commits_df)
+        # plt.show()
+        # visualizer.create_combined_visualization(commits_df)
+        # plt.show()
+
+        contributor_analyzer = ContributorLifeCycleAnalyzer()
+        participation_pattern = contributor_analyzer.analyze_participation_pattern(commits_df)
+        print(participation_pattern)
+        retention = contributor_analyzer.calculate_retention_rate(commits_df)
+        print(retention)
 else:
     print("仓库不存在，测试克隆...")
     success = collector.clone_repository()
